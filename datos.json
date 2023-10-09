@@ -1,0 +1,19 @@
+[
+    {
+        "departamentos":{
+
+            "nombre_departamento":"nombre_departamento",
+
+            "municipios":{
+
+                "nombre_municipio":"nombre_municipio",
+                
+                "monitoreos_mes":{
+                    "realizados":"realizados",
+                    "pendientes":"pendientes",
+                    "total":"total"
+                }
+            }
+        }
+    }
+]
