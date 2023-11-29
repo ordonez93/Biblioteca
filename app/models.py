@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import auth, User
 
 # Create your models here.
 
@@ -48,7 +48,7 @@ class libro_autor(models.Model):
     
 class prestamos(models.Model):
     libro = models.ForeignKey(libro, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(Persona, on_delete=models.CASCADE)
     fecha_prestamo = models.CharField(max_length=50)
     fecha_devolucion = models.CharField(max_length=50)
     estado = models.CharField(max_length=50)
